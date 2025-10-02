@@ -12,7 +12,7 @@ spring:
     config:
       server:
         native:
-          search-locations: file:///C:\Users\Maiko\IdeaProjects\Microservices\daily-haul-microservices\configserver\src\main\resources\config
+          search-locations: classpath:/config
 
 server:
   port: 8888
