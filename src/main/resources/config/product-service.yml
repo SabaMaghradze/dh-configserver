@@ -24,6 +24,13 @@ management:
       exposure:
         include: "*"
 
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+    register-with-eureka: true
+    fetch-registry: true
+
 app:
   message: "Hello Updated" # for testing purposes, to see whether bus refresh updates the config.
 #  username and password must correspond to docker-compose.yml's credentials.
