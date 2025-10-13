@@ -31,6 +31,14 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
 
+logging:
+  file:
+    name: ../logs-parent/product-service.log
+  logback:
+    rollingpolicy:
+      max-file-size: 5MB
+      max-history: 7
+
 app:
   message: "Hello Updated" # for testing purposes, to see whether bus refresh updates the config.
 #  username and password must correspond to docker-compose.yml's credentials.
